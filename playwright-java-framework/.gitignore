@@ -1,0 +1,37 @@
+# Compiled class files
+target/
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test reports
+test-output/
+allure-results/
+allure-report/
+
+# Screenshots
+screenshots/
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Playwright
+.ms-playwright/
+
+# Temporary files
+*.tmp
+*.bak
