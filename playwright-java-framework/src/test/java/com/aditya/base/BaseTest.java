@@ -29,6 +29,10 @@ public class BaseTest {
                 browserType = playwright.chromium();
         }
 
+        if (System.getenv("DISPLAY") == null || System.getenv("DISPLAY").isBlank()) {
+            headless = true;
+        }
+
         browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(headless));
         context = browser.newContext();
         page = context.newPage();
